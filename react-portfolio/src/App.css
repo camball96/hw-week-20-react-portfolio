@@ -1,0 +1,30 @@
+.menuHeader {
+    padding-top: 7px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    color: red;
+}
+
+.layout {
+    padding-left: 200px;
+}
+
+.paragraph {
+    font-size: 15px;
+    width: 70%;
+    color: red;
+}
+
+
+.formHeading{
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+}
+.form {
+    padding-top: 50px;
+    padding-left: 200px;
+    font-size: 20px;
+    width: 90%;
+    align-items: center;
+}

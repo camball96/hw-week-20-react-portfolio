@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from 'semantic-ui-react';
-import DP from '../Assets/image.jpg';
-import Bio from './Components/bio'
+import backOfTheSurf from '../Assets/backOfTheSurf.png';
+import '../App.css'
 
 
 //Technically about us page
@@ -9,17 +9,24 @@ function Home() {
 
 
     return (
-        <div>
+        <div className='layout'>
             <Grid divided='vertically'>
                 <Grid.Row columns={2}>
                     <Grid.Column>
                         <Grid.Row>
-                            <h1>About Me</h1>
+                            <h1 style={{
+                                marginBottom: 50,
+                                fontSize: 50,
+                            }}>About Me</h1>
                         </Grid.Row>
-                        <Grid.Row>
-                            <img src={DP} />
+                        <Grid.Row style={{
+                            marginBottom: 30,
+                        }}>
+                            <img src={backOfTheSurf} style={{width:'700px'}} />
                         </Grid.Row>
-                        <Grid.Row>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <Grid.Row className='paragraph' style={{marginTop:120, color:'white', padding:20, backgroundColor: 'grey', borderRadius: 10, fontSize: 18,}}>
                             <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in diam nec purus tristique commodo. Proin sed justo euismod, accumsan ex nec, molestie tellus. Fusce gravida consequat mi, vel auctor dui tincidunt ac. 
                             Vivamus interdum sit amet ex et auctor. Cras purus nunc, varius id elit at, congue pretium turpis. Proin leo dolor, maximus nec diam eu, pharetra tincidunt nisi. Curabitur neque erat, consequat ut lacus et, egestas 

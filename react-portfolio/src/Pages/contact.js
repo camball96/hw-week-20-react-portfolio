@@ -1,17 +1,32 @@
 import React from 'react';
 import { Form } from 'semantic-ui-react';
+import formVal from './Components/formVal';
+
 
 function ContactForm() {
-    let value='';
+    const {handleChange, values} = formVal();
 
     return(
-        <div>
+        <div className='form'>
+            <h1 className='formHeading'>Reach out to us!</h1>
             <Form>
                 <Form.Group widths='equal'>
-                    <Form.Input fluid label='First name' placeholder='First name' />
-                    <Form.Input fluid label='Last name' placeholder='Last name' />
+                    <Form.Input 
+                    label='Name' 
+                    placeholder='Your name' 
+                    value={values.name} 
+                    onChange={handleChange}/>
+                    <Form.Input 
+                    fluid label='Email' 
+                    placeholder='Your email'
+                    value={values.email} 
+                    onChange={handleChange} />
                 </Form.Group>
-                <Form.TextArea label='About' placeholder='Tell us more about you...' />
+                <Form.TextArea 
+                label='Question' 
+                placeholder='Want to ask something?'
+                value={values.question} 
+                onChange={handleChange} />
                 <Form.Checkbox label='I agree to the Terms and Conditions' />
                 <Form.Button>Submit</Form.Button>
             </Form>

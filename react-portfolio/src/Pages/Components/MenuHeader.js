@@ -1,6 +1,7 @@
-import React, { Component, useState } from 'react'
+import React, { useState } from 'react'
 import { Input, Menu } from 'semantic-ui-react'
 import { Link } from 'react-router-dom';
+
 
 
 
@@ -13,7 +14,13 @@ function MenuHeader(){
     
     return(
         <div>
-        <Menu secondary>
+        <Menu secondary style={{
+            paddingTop: 15,
+            paddingBottom: 15,
+            fontSize: 17,
+            marginBottom: 50,
+            background: 'grey'
+        }}>
             <Menu.Item
             name='about Me'
             active={activeItem === 'about me'}
