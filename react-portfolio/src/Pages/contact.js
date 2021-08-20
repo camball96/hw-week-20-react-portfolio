@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form } from 'semantic-ui-react';
 import formVal from './Components/formVal';
+import Footer from './Components/footer'
 
 
 function ContactForm() {

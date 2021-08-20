@@ -8,6 +8,7 @@ import ContactForm from './Pages/contact'
 import MenuHeader from './Pages/Components/MenuHeader'
 import PortfolioCards from './Pages/portfolio';
 import ResumePage from './Pages/resume';
+import Footer from './Pages/Components/footer'
 
 
 
